@@ -1,0 +1,128 @@
+2021-03-28 17:06:51 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [1049] Unknown database 'doogather-consultant-training' in C:\xampp\htdocs\doogather-consultant-training\vendor\yiisoft\yii2\db\Connection.php:712
+Stack trace:
+#0 C:\xampp\htdocs\doogather-consultant-training\vendor\yiisoft\yii2\db\Connection.php(712): PDO->__construct('mysql:host=loca...', 'root', 'root', NULL)
+#1 C:\xampp\htdocs\doogather-consultant-training\vendor\yiisoft\yii2\db\Connection.php(631): yii\db\Connection->createPdoInstance()
+#2 C:\xampp\htdocs\doogather-consultant-training\vendor\yiisoft\yii2\db\Connection.php(1032): yii\db\Connection->open()
+#3 C:\xampp\htdocs\doogather-consultant-training\vendor\yiisoft\yii2\db\Connection.php(1019): yii\db\Connection->getMasterPdo()
+#4 C:\xampp\htdocs\doogather-consultant-training\vendor\yiisoft\yii2\db\Command.php(258): yii\db\Connection->getSlavePdo()
+#5 C:\xampp\htdocs\doogather-consultant-training\vendor\yiisoft\yii2\db\Command.php(1160): yii\db\Command->prepare(true)
+#6 C:\xampp\htdocs\doogather-consultant-training\vendor\yiisoft\yii2\db\Command.php(407): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 C:\xampp\htdocs\doogather-consultant-training\vendor\yiisoft\yii2\db\mysql\Schema.php(319): yii\db\Command->queryAll()
+#8 C:\xampp\htdocs\doogather-consultant-training\vendor\yiisoft\yii2\db\mysql\Schema.php(125): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 C:\xampp\htdocs\doogather-consultant-training\vendor\yiisoft\yii2\db\Schema.php(758): yii\db\mysql\Schema->loadTableSchema('migration')
+#10 C:\xampp\htdocs\doogather-consultant-training\vendor\yiisoft\yii2\db\Schema.php(194): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#11 C:\xampp\htdocs\doogather-consultant-training\vendor\yiisoft\yii2\console\controllers\MigrateController.php(211): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#12 C:\xampp\htdocs\doogather-consultant-training\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(894): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#13 C:\xampp\htdocs\doogather-consultant-training\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(169): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#14 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#15 C:\xampp\htdocs\doogather-consultant-training\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#16 C:\xampp\htdocs\doogather-consultant-training\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#17 C:\xampp\htdocs\doogather-consultant-training\vendor\yiisoft\yii2\console\Controller.php(184): yii\base\Controller->runAction('', Array)
+#18 C:\xampp\htdocs\doogather-consultant-training\vendor\yiisoft\yii2\base\Module.php(534): yii\console\Controller->runAction('', Array)
+#19 C:\xampp\htdocs\doogather-consultant-training\vendor\yiisoft\yii2\console\Application.php(181): yii\base\Module->runAction('migrate', Array)
+#20 C:\xampp\htdocs\doogather-consultant-training\vendor\yiisoft\yii2\console\Application.php(148): yii\console\Application->runAction('migrate', Array)
+#21 C:\xampp\htdocs\doogather-consultant-training\vendor\yiisoft\yii2\base\Application.php(392): yii\console\Application->handleRequest(Object(yii\console\Request))
+#22 C:\xampp\htdocs\doogather-consultant-training\yii(20): yii\base\Application->run()
+#23 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [1049] Unknown database 'doogather-consultant-training' in C:\xampp\htdocs\doogather-consultant-training\vendor\yiisoft\yii2\db\Connection.php:642
+Stack trace:
+#0 C:\xampp\htdocs\doogather-consultant-training\vendor\yiisoft\yii2\db\Connection.php(1032): yii\db\Connection->open()
+#1 C:\xampp\htdocs\doogather-consultant-training\vendor\yiisoft\yii2\db\Connection.php(1019): yii\db\Connection->getMasterPdo()
+#2 C:\xampp\htdocs\doogather-consultant-training\vendor\yiisoft\yii2\db\Command.php(258): yii\db\Connection->getSlavePdo()
+#3 C:\xampp\htdocs\doogather-consultant-training\vendor\yiisoft\yii2\db\Command.php(1160): yii\db\Command->prepare(true)
+#4 C:\xampp\htdocs\doogather-consultant-training\vendor\yiisoft\yii2\db\Command.php(407): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 C:\xampp\htdocs\doogather-consultant-training\vendor\yiisoft\yii2\db\mysql\Schema.php(319): yii\db\Command->queryAll()
+#6 C:\xampp\htdocs\doogather-consultant-training\vendor\yiisoft\yii2\db\mysql\Schema.php(125): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 C:\xampp\htdocs\doogather-consultant-training\vendor\yiisoft\yii2\db\Schema.php(758): yii\db\mysql\Schema->loadTableSchema('migration')
+#8 C:\xampp\htdocs\doogather-consultant-training\vendor\yiisoft\yii2\db\Schema.php(194): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#9 C:\xampp\htdocs\doogather-consultant-training\vendor\yiisoft\yii2\console\controllers\MigrateController.php(211): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#10 C:\xampp\htdocs\doogather-consultant-training\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(894): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#11 C:\xampp\htdocs\doogather-consultant-training\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(169): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#12 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#13 C:\xampp\htdocs\doogather-consultant-training\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#14 C:\xampp\htdocs\doogather-consultant-training\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#15 C:\xampp\htdocs\doogather-consultant-training\vendor\yiisoft\yii2\console\Controller.php(184): yii\base\Controller->runAction('', Array)
+#16 C:\xampp\htdocs\doogather-consultant-training\vendor\yiisoft\yii2\base\Module.php(534): yii\console\Controller->runAction('', Array)
+#17 C:\xampp\htdocs\doogather-consultant-training\vendor\yiisoft\yii2\console\Application.php(181): yii\base\Module->runAction('migrate', Array)
+#18 C:\xampp\htdocs\doogather-consultant-training\vendor\yiisoft\yii2\console\Application.php(148): yii\console\Application->runAction('migrate', Array)
+#19 C:\xampp\htdocs\doogather-consultant-training\vendor\yiisoft\yii2\base\Application.php(392): yii\console\Application->handleRequest(Object(yii\console\Request))
+#20 C:\xampp\htdocs\doogather-consultant-training\yii(20): yii\base\Application->run()
+#21 {main}
+Additional Information:
+Array
+(
+    [0] => HY000
+    [1] => 1049
+    [2] => Unknown database 'doogather-consultant-training'
+)
+
+2021-03-28 17:06:51 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Radyatama\\AppData\\Roaming'
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey'
+    'ChocolateyLastPathUpdate' => '132583182115702584'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'LAPTOP-1OL4EMOQ'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'GoLand' => 'C:\\Program Files\\JetBrains\\GoLand 2020.3.2\\bin;'
+    'GOPATH' => 'C:\\Users\\Radyatama\\go'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Radyatama'
+    'LOCALAPPDATA' => 'C:\\Users\\Radyatama\\AppData\\Local'
+    'LOGONSERVER' => '\\\\LAPTOP-1OL4EMOQ'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OneDrive' => 'C:\\Users\\Radyatama\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\chocolatey\\bin;C:\\xampp\\php;C:\\composer;C:\\Program Files\\Go\\bin;C:\\Users\\Radyatama\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\JetBrains\\GoLand 2020.3.2\\bin;;C:\\Users\\Radyatama\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\Radyatama\\.dotnet\\tools;C:\\Users\\Radyatama\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\Radyatama\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\xampp\\php;C:\\Users\\Radyatama\\go\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 140 Stepping 1, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '8c01'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\RADYAT~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\RADYAT~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'LAPTOP-1OL4EMOQ'
+    'USERDOMAIN_ROAMINGPROFILE' => 'LAPTOP-1OL4EMOQ'
+    'USERNAME' => 'Radyatama'
+    'USERPROFILE' => 'C:\\Users\\Radyatama'
+    'windir' => 'C:\\Windows'
+    'YII_PATH' => 'C:\\xampp\\htdocs\\doogather-consultant-training\\'
+    'ZES_ENABLE_SYSMAN' => '1'
+    'PHP_SELF' => 'C:\\xampp\\htdocs\\doogather-consultant-training\\yii'
+    'SCRIPT_NAME' => 'C:\\xampp\\htdocs\\doogather-consultant-training\\yii'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\doogather-consultant-training\\yii'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\doogather-consultant-training\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1616944010.8286
+    'REQUEST_TIME' => 1616944010
+    'argv' => [
+        0 => 'C:\\xampp\\htdocs\\doogather-consultant-training\\yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
